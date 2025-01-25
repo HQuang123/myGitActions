@@ -23,5 +23,5 @@ jobs:
     # Upload the WAR file
     - name: Deploy WAR file to Ubuntu server
       run: |
-        scp -o StrictHostKeyChecking=no ./Q7_ShoppingCart/.dist/Q7_ShoppingCart.war ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/home/ubuntu/apache-tomcat-10.1.34/webapps
+        scp -o StrictHostKeyChecking=no ./Q7_ShoppingCart/dist/Q7_ShoppingCart.war ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/home/ubuntu/apache-tomcat-10.1.34/webapps
         ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} 'sudo systemctl restart tomcat'
