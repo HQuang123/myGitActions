@@ -3,7 +3,7 @@ name: Deploy WAR to Ubuntu Server
 on:
   push:
     branches:
-      - main  # Or the branch you use for deployment
+      - main  # Or the branch you use for deploymentfff
 
 jobs:
   deploy:
