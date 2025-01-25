@@ -12,7 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Login Form</h1>
+        <h1>Login Form (test github action)</h1>
         <h3 style="color:red">${requestScope.error}</h3>
         <form action="login" method="get">
             <table>
